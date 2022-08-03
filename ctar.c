@@ -112,7 +112,7 @@ int createEmptyArchive(char* filename)
     }
     else
     {
-        //file doesn't exist
+        //file does not exist
         int fd, bytesWritten;        
 
         hdr emptyArchive = {.magic = 0x63746172, .eop = sizeof(hdr), .block_count = 0, .file_size = {0}, .deleted = {0},
